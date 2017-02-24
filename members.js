@@ -17,6 +17,7 @@ $(document).ready(function () {
     function stateChanged() {
         if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete") {
             document.getElementById("member_2").innerHTML = xmlHttp.responseText;
+            //alert(xmlHttp.responseText);
         }
     }
     function GetXmlHttpObject() {
