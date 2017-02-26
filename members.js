@@ -1,9 +1,21 @@
 $(document).ready(function () {
     
     var xmlHttp;
-    show();
+    show("Assistant");
+    setTimeout(function () {
+        show("Research Assistant");
+        setTimeout(function () {
+            show("PhD");
+            setTimeout(function () {
+                show("MS");
+                setTimeout(function () {
+                    show("Alumni");
+                }, 300);
+            }, 300);
+        }, 300);
+    }, 300);
 
-    function show() {
+    function show(name) {
         xmlHttp = GetXmlHttpObject();
         if (xmlHttp == null) {
             alert("Browser does not support HTTP Request");
@@ -11,13 +23,16 @@ $(document).ready(function () {
         }
 
         var url = "members.php";
-        xmlHttp.onreadystatechange = stateChanged
+        url=url+"?q="+name;
+        url=url+"&sid="+Math.random();
+        xmlHttp.onreadystatechange = function(){stateChanged(name);};
+        //alert(xmlHttp.onreadystatechange);
         xmlHttp.open("GET", url, true);
         xmlHttp.send(null);
     }
-    function stateChanged() {
+    function stateChanged(name) {
         if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete") {
-            document.getElementById("member_2").innerHTML = xmlHttp.responseText;
+            document.getElementById(name).innerHTML = xmlHttp.responseText;
             //alert(xmlHttp.responseText);
         }
     }
