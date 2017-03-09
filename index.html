@@ -19,9 +19,62 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="javascript.js"></script>
     <script src="jquery.flexslider-min.js"></script>
+    <script src="./index.js"></script>
+<!--
+    <script>
+		var T_SWITCH=64, RADIUS=.75;
+		mybeats=0;
+		window.onload = function() {
+			window.wallpaperRegisterAudioListener(wallpaperAudioListener);
+			window.wallpaperPropertyListener={
+				applyUserProperties: function(properties){
+					if(properties.speed){
+						T_SWITCH = Math.round (512 / properties.speed.value);
+						f = 1 / T_SWITCH;
+					}
+					if(properties.radius){
+						RADIUS = properties.radius.value / 100;
+						_min = RADIUS * omin;
+					}
+				}
+			}
+			function wallpaperAudioListener(audioArray){
+				var lowFreqs=audioArray.slice(0,7).concat(audioArray.slice(64,64+7));
+				var sum=lowFreqs.reduce((a,b) => a+b,0);
+				mybeats = sum / lowFreqs.length;
+			}
+		}
+
+	</script>
+-->
+<!--
+    <style>
+		canvas { height: 100%; }
+
+		html { 
+/*        overflow: hidden; */
+            overflow:scroll;
+        background: #020202; }
+
+		body { margin: 0; }
+
+		canvas {
+			position: absolute;
+			width: 100%;
+		}
+    </style>
+-->
+    
 </head>
     
 <body id="myPage">
+    <div>
+<!--
+        <canvas></canvas> 
+		<canvas></canvas>
+-->
+<!--		<script src="./index.js"></script>-->
+<!--    </div>-->
     <div id="nav">
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -134,5 +187,6 @@
         </div>
     </div>
 <iframe src="foot.html" frameborder="0" scrolling="no"></iframe>
+        </div>
 </body>
 </html>
