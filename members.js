@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    
     var xmlHttp;
     show("Assistant");
     setTimeout(function () {
@@ -23,19 +22,23 @@ $(document).ready(function () {
         }
 
         var url = "members.php";
-        url=url+"?q="+name;
-        url=url+"&sid="+Math.random();
-        xmlHttp.onreadystatechange = function(){stateChanged(name);};
+        url = url + "?q=" + name;
+        url = url + "&sid=" + Math.random();
+        xmlHttp.onreadystatechange = function () {
+            stateChanged(name);
+        };
         //alert(xmlHttp.onreadystatechange);
         xmlHttp.open("GET", url, true);
         xmlHttp.send(null);
     }
+
     function stateChanged(name) {
         if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete") {
             document.getElementById(name).innerHTML = xmlHttp.responseText;
             //alert(xmlHttp.responseText);
         }
     }
+
     function GetXmlHttpObject() {
         var xmlHttp = null;
         try {
@@ -51,12 +54,12 @@ $(document).ready(function () {
         }
         return xmlHttp;
     }
-    
-        $('.dropdown').hover(function () {
-            $(this).find('.dropdown-menu').stop(true, true).fadeIn(500);
-        }, function () {
-            $(this).find('.dropdown-menu').stop(true, true).fadeOut(500);
-        });
-    
-    
+
+    $('.dropdown').hover(function () {
+        $(this).find('.dropdown-menu').stop(true, true).fadeIn(500);
+    }, function () {
+        $(this).find('.dropdown-menu').stop(true, true).fadeOut(500);
+    });
+
+
 });
