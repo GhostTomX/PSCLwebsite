@@ -1,10 +1,5 @@
-//function iframeA(){
-//		window.frames["ifa_foot"].document.getElementById('colloctor')= "red";
-//	}
-
 function SetCollector() {
     var caution = false
-
     function setCookie(name, value, expires, path, domain, secure) {
         var curCookie = name + "=" + escape(value) +
             ((expires) ? ";expires=" + expires.toGMTString() : "") +
@@ -54,22 +49,17 @@ function SetCollector() {
     if (!visits) {
         visits = 1;
     } else {
-        visits = parseInt(visits) + 1;
+        if(document.URL.endsWith("pscl") || document.URL.endsWith("#myPage")){
+        visits = parseInt(visits) + 1;}
+        else{
+           visits = parseInt(visits); 
+        }
     }
-    //                    visits=0;
+//    visits=0;
     setCookie("counter", visits, now)
-//    document.write("<li>No." + visits + " since </li>") //2017/03/11
-    
-    console.log("No." + visits + " since </li>");
-    
-    window.frames["ifa_foot"].document.getElementById('myPage').style.background="red";
-//    alert("<li>No." + visits + " since </li>") //2017/03/11
+    window.frames["myiframeA"].document.getElementById('colloctor').innerHTML ="This is your No." + visits+" visits" ;
 }
-
 $(document).ready(function () {
-//    alert(document.getElementById("myPage"));
-//alert(document.domain);
-    SetCollector();
     $('.flexslider').flexslider({
         //animation: "slide",
         slideshowSpeed: 1500,
