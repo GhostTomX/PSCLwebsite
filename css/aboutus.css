@@ -1,0 +1,31 @@
+#myPage {
+    background-color: dimgray;
+}
+
+img{
+    width:100%;
+}
+.content {
+    margin-top: 100px;
+    color:whitesmoke;
+}
+iframe {
+   width:100%;
+}
+
+.navbar-brand {
+    padding: 0 0 ;
+}
+.navbar {
+    border-bottom-width:9px;
+/*    background-color: black!important;*/
+}
+.dropdown-menu {
+    background-color: ghostwhite;
+    
+}
+
+.navbar-right {
+        border: 2px solid #fff;
+    border-radius: 4px;
+}
