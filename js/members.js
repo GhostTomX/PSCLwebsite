@@ -1,63 +1,24 @@
 $(document).ready(function () {
-    var xmlHttp;
-    show("Assistant");
-    setTimeout(function () {
-        show("Research Assistant");
-        setTimeout(function () {
-            show("PhD");
-            setTimeout(function () {
-                show("MS");
-                setTimeout(function () {
-                    show("Alumni");
-                }, 300);
-            }, 300);
-        }, 300);
-    }, 300);
-
-    function show(name) {
-        xmlHttp = GetXmlHttpObject();
-        if (xmlHttp == null) {
-            alert("Browser does not support HTTP Request");
-            return;
-        }
-
-        var url = "members.php";
-        url = url + "?q=" + name;
-        url = url + "&sid=" + Math.random();
-        xmlHttp.onreadystatechange = function () {
-            stateChanged(name);
-        };
-        //alert(xmlHttp.onreadystatechange);
-        xmlHttp.open("GET", url, true);
-        xmlHttp.send(null);
-    }
-
-    function stateChanged(name) {
-        if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete") {
-            document.getElementById(name).innerHTML = xmlHttp.responseText;
-            //alert(xmlHttp.responseText);
-        }
-    }
-
-    function GetXmlHttpObject() {
-        var xmlHttp = null;
-        try {
-            // Firefox, Opera 8.0+, Safari
-            xmlHttp = new XMLHttpRequest();
-        } catch (e) {
-            //Internet Explorer
-            try {
-                xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
-            } catch (e) {
-                xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
-            }
-        }
-        return xmlHttp;
-    }
-
-    $('.dropdown').hover(function () {
-        $(this).find('.dropdown-menu').stop(true, true).fadeIn(500);
-    }, function () {
-        $(this).find('.dropdown-menu').stop(true, true).fadeOut(500);
+    $.getJSON("data/members.json", function (data) {
+        console.log(data);
+        show('Assistant',data.Assistant);
+        show('RA',data.RA);
+        show('PhD',data.PhD);
+        show('MS',data.MS);
+        show('Alumni',data.Alumni);
     });
 });
+
+function show(id,data) {
+    console.log(data[0].Name);
+    for (var i = 0; i < data.length; i++) {
+        $("#"+id).append("<div class='col-sm-3'><div class = 'member_outdiv'><img class='Option img-circle' src=" +
+            data[i].Img +
+            " height='100%' width='100%'>" +
+            "<h5>Name:" + data[i].Name + "</h5>" +
+            "<h5>Mail:" + data[i].Mail + "</h5>" +
+            "<h5>Year:" + data[i].Year + "</h5>" +
+            "<form class = 'bt' action = '" + data[i].ResearchUrl + "'><input type='submit' class='btn btn-primary' value ='" + data[i].Research + "'></form>"
+        );
+    }
+}
