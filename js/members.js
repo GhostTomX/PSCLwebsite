@@ -18,7 +18,7 @@ function show(id,data) {
             "<h5>Name:" + data[i].Name + "</h5>" +
             "<h5>Mail:" + data[i].Mail + "</h5>" +
             "<h5>Year:" + data[i].Year + "</h5>" +
-            "<form class = 'bt' action = '" + data[i].ResearchUrl + "'><input type='submit' class='btn btn-primary' value ='" + data[i].Research + "'></form>"
+            "<form class = 'bt' action = '" + data[i].ResearchUrl + "'><input type='submit' class='btn btn-primary' value ='" + data[i].Research + "'></form><br>"
         );
     }
 }

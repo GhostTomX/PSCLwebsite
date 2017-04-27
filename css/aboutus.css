@@ -49,7 +49,10 @@ iframe {
     text-align: center;
 }
 
-
+.member_outdiv{
+    width:100%;
+/*    height: 1vw;*/
+}
 
 .btn {
     width: 170px;
