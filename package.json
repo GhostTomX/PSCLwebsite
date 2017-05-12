@@ -1,0 +1,11 @@
+{
+	"name": "PSCL website",
+	"version": "1.4.0",
+	"author": "Xu Guanghao",
+	"description": "The official website of Precision System Control Laboratory of National Taiwan University",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/GhostTomX/PSCLwebsite"
+	}
+}
+
