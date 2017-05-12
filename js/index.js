@@ -89,11 +89,11 @@ $(document).ready(function () {
     mouseon("#Contact_us");
     mouseoff("#Contact_us");
 
-    var Ow = $('.Option').width();
-    $('.Option').css({
-        'height': Ow + 'px'
-    });
     var Sw = $('#Supervisor').width();
+        $('.Option').css({
+        'height': Sw * 0.9 + 'px'
+        
+    });
     $('#Supervisor').css({
         'height': 2 * Sw * 0.9 + 70 + 'px'
     });
