@@ -1,0 +1,175 @@
+
+
+#myPage {
+    background-color: dimgray;
+}
+
+#manu {
+    background-image:url(../images/rd.jpg);*/
+    margin-top: -20px;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    visibility:visible;
+    position:relative;
+/*    margin-top: auto;*/
+    background-color: dimgray;
+    width: 100%;
+    border-top-width:8px; 
+    border-style:solid; 
+    border-color:white;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 8px;
+}
+
+#S_Name_Link {
+    width:100%;
+    position: absolute;
+    color:white;
+    float: right;
+    text-align: right;
+    right:0px;
+    padding-right: 25px;
+    bottom: 20px;
+}
+
+.manu_Name {
+    bottom:0px;
+    right: 50px;
+    float: right;
+    position: absolute;
+    z-index: 999;
+}
+
+.Option {
+    width:90%;
+    margin-top: 15px;
+    margin-left: 20px;
+
+    margin-bottom:10px;
+    border-style:solid; 
+    border-color:rgba(0,0,0,0.75);
+    border-top-width: 0px;    
+    border-left-width: 0px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    
+}
+
+.float {
+    float:right;
+}
+
+#content {
+    margin-top: 40px;
+    background-image: url(../images/bd.jpg);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+.ps {
+    float: left;
+}
+
+.cl {
+    float: left;
+}
+
+.manu_Name> a:{
+    color:white;
+}
+
+.manu_Name> a:hover {
+    text-decoration:none;
+    color:white;
+}
+
+
+.member_outdiv > .Option {
+    filter: none; /* IE6-9 */
+    -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+.member_outdiv {
+    text-align: center;
+}
+
+.member_outdiv>h5 {
+    text-align: left;
+    margin-left: 10%;
+}
+
+
+
+.manu_Name> a {
+color: rgba(10%, 10%, 10%, 0.8) ;*/
+}
+.manu_Name> a:{
+    color:black;
+}
+
+#thispage {
+    color: black !important;
+    background-color:white;
+}
+
+.navbar-right li:last-child{
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+img {
+    width:100%;
+}
+
+iframe {
+    width:100%;
+    height:300px;
+}
+
+
+
+#foot {
+    border-right:thin solid whitesmoke;
+    margin-top: 20px;
+    color:whitesmoke;
+    height:240px;
+}
+
+
+#foot>p>a {
+    color:white;
+    border: thin solid;
+    margin-left: 20px;
+}
+h5>a{
+    text-decoration: none;
+    color:white;
+}
+
+h5>a:hover {
+    text-decoration: none;
+    background-color: whitesmoke;
+    color:black;
+}
+
+#foot>li >a {
+    color:white;
+    text-decoration: none;
+}
+#foot>li >a:hover {
+    background-color: whitesmoke;
+    color:black;
+    text-decoration: none;
+}
+
+#foot:last-child{
+/*    color:black;*/
+    border:none;
+}
+
+
+
+.navbar-brand {
+    padding: 0 0 ;
+}

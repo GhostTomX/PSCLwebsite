@@ -13,14 +13,14 @@
             "Img": "images/members/Yi-Liang_Yeh.jpg",
             "Name": "Yi-Liang Yeh",
             "Mail": "b92502052@ntu.edu.tw",
-            "ResearchUrl": "/Piezo_Control.html",
+            "ResearchUrl": "/data/XD.pdf",
             "Research": "新代"
     },
         {
             "Img": "images/members/Shih-Tang_Liu.jpg",
             "Name": "Shih-Tang Liu",
             "Mail": "r02522810@ntu.edu.tw",
-            "ResearchUrl": "/Piezo_Control.html",
+            "ResearchUrl": "/data/JYJC.pdf",
             "Research": "晶圓"
     }
 ],
@@ -30,7 +30,7 @@
             "Name": "蔡一豪",
             "Mail": "mr.ihaur@gmail.com",
             "Year": "?",
-            "ResearchUrl": "/NEPII.html",
+            "ResearchUrl": "/data/NEPII.pdf",
             "Research": "NEPII"
     },
         {
@@ -38,7 +38,7 @@
             "Name": "Yu-Cun Lin",
             "Mail": "cash1222@hotmail.com",
             "Year": "?",
-            "ResearchUrl": "/3DP.html",
+            "ResearchUrl": "/data/3DP.pdf",
             "Research": "3DP"
     },
         {
@@ -46,7 +46,7 @@
             "Name": "Jun-Ji Lin",
             "Mail": "b99502019@ntu.edu.tw",
             "Year": "?",
-            "ResearchUrl": "/人工角膜.html",
+            "ResearchUrl": "/data/RGJM.pdf",
             "Research": "人工角膜"
     },
         {
@@ -54,7 +54,7 @@
             "Name": "蔡佳豪",
             "Mail": "d04522034@ntu.edu.tw",
             "Year": "?",
-            "ResearchUrl": "/微創.html",
+            "ResearchUrl": "/data/WC.pdf",
             "Research": "微創"
     },
         {
@@ -62,16 +62,8 @@
             "Name": "汪彥瀚",
             "Mail": "jacky04c@yahoo.com.tw",
             "Year": "?",
-            "ResearchUrl": "/鴻海(機器人).html",
-            "Research": "鴻海(機器人)"
-    },
-        {
-            "Img": "images/01.jpg",
-            "Name": "俊儒",
-            "Mail": "?",
-            "Year": "?",
-            "ResearchUrl": "?",
-            "Research": "NTU SPARK"
+            "ResearchUrl": "/data/ZXC.pdf",
+            "Research": "助行車"
     }
 ],
     "MS": [
@@ -80,84 +72,84 @@
             "Name": "Meng-Ru Hsieh",
             "Mail": "ms0347070@yahoo.com.tw",
             "Year": "2nd",
-            "ResearchUrl": "/Piezo_Control.html",
+            "ResearchUrl": "/data/HIWIN.pdf",
             "Research": "HIWIN"
     }, {
             "Img": "images/members/Xu_Guanghao.jpg",
             "Name": "Xu Guanghao",
             "Mail": "r04522839@ntu.edu.tw",
             "Year": "2nd",
-            "ResearchUrl": "/Piezo_Control.html",
+            "ResearchUrl": "/data/SEM.pdf",
             "Research": "Piezo Control"
     }, {
             "Img": "images/01.jpg",
             "Name": "余睿洋",
             "Mail": "hunter19921029@gmail.com",
             "Year": "2nd",
-            "ResearchUrl": "/晶圓.html",
+            "ResearchUrl": "/data/JYJC.pdf",
             "Research": "晶圓"
     }, {
             "Img": "images/01.jpg",
             "Name": "曾煥哲",
             "Mail": "ilovebritpop@gmail.com",
             "Year": "2nd",
-            "ResearchUrl": "/NEPII.html",
+            "ResearchUrl": "/data/NEPII.pdf",
             "Research": "NEPII"
     }, {
             "Img": "images/members/Joseph_Chen.jpg",
             "Name": "Joseph Chen",
             "Mail": "sixonefourup@yahoo.com.tw",
             "Year": "2nd",
-            "ResearchUrl": "/微創.html",
+            "ResearchUrl": "/data/WC.pdf",
             "Research": "微創"
     }, {
             "Img": "images/members/Tzu-Wei_WANG.jpg",
             "Name": "Tzu-Wei WANG",
             "Mail": "jeffbaseball455172@gmail.com",
             "Year": "2nd",
-            "ResearchUrl": "/鴻海(機器人).html",
-            "Research": "鴻海(機器人)"
+            "ResearchUrl": "/data/ZXC.pdf",
+            "Research": "助行車"
     }, {
             "Img": "images/members/Fan-Chun_Kuo.jpg",
             "Name": "Fan-Chun Kuo",
             "Mail": "protasd55@gmail.com",
             "Year": "1st",
-            "ResearchUrl": "/HIWIN.html",
+            "ResearchUrl": "/data/HIWIN.pdf",
             "Research": "HIWIN"
     }, {
             "Img": "images/01.jpg",
             "Name": "Wei Min",
             "Mail": "r05522840@ntu.edu.tw",
             "Year": "1st",
-            "ResearchUrl": "/晶圓.html",
+            "ResearchUrl": "/data/JYJC.pdf",
             "Research": "晶圓"
     }, {
             "Img": "images/members/Evan_Huang.jpg",
             "Name": "Evan Huang",
             "Mail": "ab89810324@gmail.com",
             "Year": "1st",
-            "ResearchUrl": "/NEPII.html",
+            "ResearchUrl": "/data/NEPII.pdf",
             "Research": "NEPII"
     }, {
             "Img": "images/members/Pang-Wei_Yen.jpg",
             "Name": "Pang-Wei_Yen",
             "Mail": "bmy2054@yahoo.com.tw",
             "Year": "1st",
-            "ResearchUrl": "/3DP.html",
+            "ResearchUrl": "/data/3DP.pdf",
             "Research": "3DP"
     }, {
             "Img": "images/members/Hsin-Ju_Lai.jpg",
             "Name": "Hsin-Ju Lai",
             "Mail": "wxes9240134@gmail.com",
             "Year": "1st",
-            "ResearchUrl": "/人工角膜.html",
-            "Research": "人工角膜"
+            "ResearchUrl": "/data/NTU_SPARK.pdf",
+            "Research": "NTU_SPARK"
     }, {
             "Img": "images/members/Sung-Chi_Chiang.jpg",
             "Name": "Sung-Chi Chiang",
             "Mail": "sungchi.benedict.chiang@gmail.com",
             "Year": "1st",
-            "ResearchUrl": "/微創.html",
+            "ResearchUrl": "/data/WC.html",
             "Research": "微創"
     }
 ],
